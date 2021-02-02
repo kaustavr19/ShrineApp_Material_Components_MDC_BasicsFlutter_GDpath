@@ -6,6 +6,7 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends State<LoginPage> {
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -37,6 +38,18 @@ class _LoginPageState extends State<LoginPage> {
                 labelText: 'Password',
               ),
               obscureText: true,
+            ),
+            ButtonBar(
+              children: <Widget>[
+                FlatButton(
+                  child: Text('CANCEL'),
+                  onPressed: () {},
+                ),
+                RaisedButton(
+                  child: Text('NEXT'),
+                  onPressed: () {},
+                ),
+              ],
             ),
           ],
         ),
