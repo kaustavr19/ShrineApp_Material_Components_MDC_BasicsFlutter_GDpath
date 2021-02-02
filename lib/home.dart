@@ -36,8 +36,13 @@ class HomePage extends StatelessWidget {
           },
         ),
       ),
-      body: Center(
-        child: Text('You did it!'),
+      body: GridView.count(
+        crossAxisCount: 2,
+        padding: EdgeInsets.all(16.0),
+        childAspectRatio: 8.0 / 9.0,
+        children: <Widget>[
+          Card(),
+        ],
       ),
       resizeToAvoidBottomInset: false,
     );
