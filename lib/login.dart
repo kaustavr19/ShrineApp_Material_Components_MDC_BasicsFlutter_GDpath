@@ -22,6 +22,22 @@ class _LoginPageState extends State<LoginPage> {
               ],
             ),
             SizedBox(height: 120.0),
+            TextField(
+              decoration: InputDecoration(
+                filled: true,
+                labelText: 'Username',
+              ),
+            ),
+            SizedBox(
+              height: 12.0,
+            ),
+            TextField(
+              decoration: InputDecoration(
+                filled: true,
+                labelText: 'Password',
+              ),
+              obscureText: true,
+            ),
           ],
         ),
       ),
