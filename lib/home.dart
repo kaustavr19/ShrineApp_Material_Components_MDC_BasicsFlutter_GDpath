@@ -6,6 +6,15 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('SHRINE'),
+        leading: IconButton(
+          icon: Icon(
+            Icons.menu,
+            semanticLabel: 'menu',
+          ),
+          onPressed: () {
+            print('Menu Button');
+          },
+        ),
       ),
       body: Center(
         child: Text('You did it!'),
