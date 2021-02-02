@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
+import 'model/products_repository.dart';
+import 'model/product.dart';
 
 class HomePage extends StatelessWidget {
   @override
