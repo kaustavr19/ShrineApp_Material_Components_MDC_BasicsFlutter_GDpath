@@ -43,14 +43,16 @@ class HomePage extends StatelessWidget {
                   children: <Widget>[
                     // TODO: Handle overflowing labels (103)
                     Text(
-                      product.name,
-                      style: theme.textTheme.title,
+                      product == null ? '' : product.name,
+                      style: theme.textTheme.button,
+                      softWrap: false,
+                      overflow: TextOverflow.ellipsis,
                       maxLines: 1,
                     ),
-                    SizedBox(height: 8.0),
+                    SizedBox(height: 4.0),
                     Text(
-                      formatter.format(product.price),
-                      style: theme.textTheme.body2,
+                      product == null ? '' : formatter.format(product.price),
+                      style: theme.textTheme.caption,
                     ),
                   ],
                 ),
