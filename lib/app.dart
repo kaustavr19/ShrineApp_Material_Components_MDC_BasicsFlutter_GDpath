@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'colors.dart';
 import 'home.dart';
 import 'login.dart';
+import 'supplemental/cut_corners_border.dart';
 
 final ThemeData _kShrineTheme = _buildShrineTheme();
 ThemeData _buildShrineTheme() {
@@ -24,7 +25,7 @@ ThemeData _buildShrineTheme() {
       color: kShrineBrown900,
     ),
     inputDecorationTheme: InputDecorationTheme(
-      border: OutlineInputBorder(),
+      border: CutCornersBorder(),
     ),
   );
 }
